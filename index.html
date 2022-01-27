@@ -5,28 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de figuritas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>
         Figuras geométricas
     </h1>
 
-    <section>
-        <h2>Calcula el área y perímetro de un cuadrado</h2>
-        <form>
-            <label for="inputCuadrado">
-                Escribe cuanto mide el lado de tu cuadrado: 
-            </label>
-            <input id="inputCuadrado" type="number">
-            <button type="button">
-                Calcular el perímetro
-            </button>
-            <button type="button">
-                Calcular el área
-            </button>
-        </form>
-    </section>
+    <main class="master">
+        <div class="contenedor sombra">
+            <h2>Calcula el área y perímetro de un cuadrado</h2>
+            <form>
+                <label for="inputCuadrado">
+                    Escribe cuanto mide el lado de tu cuadrado: 
+                </label>
+                <input id="inputCuadrado" type="number" placeholder="lado">
+                <button class="boton" type="button">
+                    Calcular el perímetro
+                </button>
+                <button class="boton" type="button">
+                    Calcular el área
+                </button>
+            </form>
+        </div>
 
+        <div class="contenedor sombra">
+            <h2>Calcula el área y perímetro de un triangulo</h2>
+            <form>
+                <label for="inputTriangulo">
+                    Escribe las medidas del triangulo: 
+                </label>
+                <input id="inputTriangulo" type="number" placeholder="lado 1">
+                <input id="inputTriangulo" type="number" placeholder="lado 2">
+                <input id="inputTriangulo" type="number" placeholder="base">
+                <input id="inputTriangulo" type="number" placeholder="altura">
+                
+
+                <button class="boton" type="button">
+                    Calcular el perímetro
+                </button>
+                <button class="boton" type="button">
+                    Calcular el área
+                </button>
+            </form>
+        </div>
+
+        <div class="contenedor sombra">
+            <h2>Calcula el área y perímetro de un Circulo</h2>
+            <form>
+                <label for="inputCirculo">
+                    Escribe cuanto mide el radio: 
+                </label>
+                <input id="inputCirculo" type="number" placeholder="radio">
+                <button class="boton" type="button">
+                    Calcular el perímetro
+                </button>
+                <button class="boton" type="button">
+                    Calcular el área
+                </button>
+            </form>
+        </div>
+    </main>
     <script src="figuritas.js"></script>
 </body>
 </html>
